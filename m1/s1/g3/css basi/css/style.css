@@ -1,0 +1,22 @@
+/*
+selettore {
+    proprietà/regola : valore
+    proprietà/regola : valore
+    proprietà/regola : valore
+}
+*/
+
+
+div{
+    color: red;
+    background-color: blue;
+}
+
+div span{
+    color: white;
+}
+
+div, span{
+    border: 1px solid #000;   /*con la virgola seleziono  più tag*/
+    
+}

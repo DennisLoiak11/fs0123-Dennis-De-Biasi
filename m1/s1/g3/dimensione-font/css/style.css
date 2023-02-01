@@ -1,0 +1,29 @@
+/*
+Posso modificare la dimensione assoluta di tutti gli elementi del body
+body{
+    font-size: 20px;
+}
+*/
+
+
+:root{
+    font-size: 16px;
+}
+
+
+#t1{
+    font-size: 2rem;
+}
+
+#t2{
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+#parent{
+    font-size: 50px;
+}
+#t3{
+    font-size: 1em;
+}
