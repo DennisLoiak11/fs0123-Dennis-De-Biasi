@@ -1,0 +1,62 @@
+header{
+    text-align: center;
+}
+
+header img{
+    width: 200px;
+}
+
+header p{
+    background: linear-gradient(180deg, #ffdaad, transparent); height: 35pxpx;
+    border-top: 1px solid orange;
+}
+
+main{
+    width: 550px;
+    margin: 0 auto;
+}
+
+
+#prima-sezione img{
+max-width: 100%;
+border-radius: 10px;
+}
+
+#prima-sezione h1{
+    text-align: center;
+}
+
+#featured{
+    border-left: 1px solid orange;
+    padding-left: 10px;
+}
+
+#featured p{
+    margin-bottom: auto;
+    color: orangered;
+}
+
+#featured a{
+    color: steelblue;
+}
+
+#ingredients h2{
+    border-bottom: 1px solid lightblue;
+    padding-bottom: 15px
+}
+
+#method h2{
+    border-bottom: 1px solid lightblue;
+    padding-bottom: 15px
+}
+
+#method p{
+    padding-left: 40px;
+}
+
+body{
+    font-family: 'Vesper Libre', serif;
+}
+
+
+
