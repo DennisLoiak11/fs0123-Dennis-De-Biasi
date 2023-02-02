@@ -1,0 +1,56 @@
+.logo{
+    width:250px;
+    height:60px;
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 100%
+}
+.bg{
+    background-image: url(../img/sfondo.png);
+}
+
+.header{
+    background-image: linear-gradient(351deg, #1e6660, #5cb5c9);    
+    box-shadow: 0px 1px 10px -2px #000000;
+    text-align: center;
+    
+}
+.header p, header a{
+    list-style-type: none;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.margin{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+li::marker{
+    content: none;
+}
+
+li::before{
+    content: "⇒";
+    font-weight: bold;
+    color: white;
+}
+
+li::after{
+    content: "⇐";
+    font-weight: bold;
+    color: white;
+}
+
+main{
+    background-color: white;
+    padding: 20px;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 2rem;
+}
