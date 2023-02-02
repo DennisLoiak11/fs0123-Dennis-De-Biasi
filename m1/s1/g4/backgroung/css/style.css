@@ -1,0 +1,38 @@
+img{
+    max-width: 100%; /*così le immagini non andranno oltre la larghezza del contenitore*/
+}
+
+/*css background*/
+.quadrato{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+#q1{
+    background-image: url(../img/images.png);
+    background-size: 100px auto;
+    background-repeat: no-repeat; /*per crearne solo 1*/
+    background-position: center; /*per posizionare l'immagine nel contenitore*/
+}
+
+#q2{
+    background-image: url(../img/images.png), url(../img/images.png);
+    background-size: 100px auto;
+    background-repeat: no-repeat, repeat-y;
+    background-position: right top, left bottom; 
+}
+
+#q3{
+    background-image: url(../img/images.png), url(../img/images.png);
+    background-size: cover;
+    width: 100%;
+}
+
+#q4{
+    background-image: url(../img/images.png), url(../img/images.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+}
