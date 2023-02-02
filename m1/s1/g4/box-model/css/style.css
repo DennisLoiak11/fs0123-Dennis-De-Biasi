@@ -1,0 +1,36 @@
+.quadrato{
+    width: 200px;
+    height: 200px;
+    /*Posso modificare l'area interna di un contenitore (ad esempio con width e height solo se questo è di tipo block, infatti la classe .quadrato applicata sia a div che a span ha modificato solo div.)*/
+    background-color: red;
+    overflow: auto /*overflow gestisce come si comportano i contenuti quando sono più grandi del genitore*/;
+    /*white-space: nowrap; (non fa mai andare a capo il testo)*/ 
+} 
+
+.max{
+    max-width: 900px;
+    background-color: blue;
+    min-height: 10px; /*se scrivo qualcosa all'interno del div, la sua altezza può aumentare da 10px in sù*/
+
+}
+.padding{
+    padding: 15px; /*il padding separa il contenuto dai bordi. (non va usato per creare dello spazio tra due elementi al posto del margin)*/
+    box-sizing: border-box; /*normalmente il padding, se aggiunto, crea dello spazio aggiuntivo, ma con box-sizing va verso l'interno del contenuto senza creare spazio aggiuntivo*/
+}
+
+/*AREA DEL BORER (bordino grafico)*/
+.border{
+    border: 5px solid black;
+    border-radius:5px; /*border-radius lo uso per arrotondare gli angoli dei bordi dell'elemento. (con border-radius 100% si crea un cerchio)*/
+
+    /*esistono "border-top-left", ..., ...,*/
+    
+    
+    /*-outline: 7px solid blue;  secondo bordo + esterno
+      -outline-offset: 20px; per impostare la distanza dal border*/
+}
+
+/*AREA MARGIN*/
+.margin{
+    margin: 100px; /*Con margin posso creare dello spazio tra due contenuti. Lo spazio creato dal valore del margin si estende verso l'esterno e non modifica le dimensioni del contenuto poichè esterno ad esso*/
+}
