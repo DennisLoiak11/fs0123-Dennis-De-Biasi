@@ -1,0 +1,81 @@
+/*stili generali*/
+
+a, a:visited, a:active{
+    color: black;
+    text-decoration: none;
+}
+
+/*stili generali*/
+
+section > span{
+    text-decoration: line-through;
+}    /*Con il segno maggiore considera gli span diretti di section*/
+
+/*
+section span{
+
+}  Considera tutti gli span dentro section */ 
+
+
+section + small{ /*LO small subito dopo la section*/
+    font-weight: bold;
+}
+
+section ~ small{ /*Tutti gli small dopo una section*/
+    color: red;
+}
+/*esempio menu mobile pure class*/
+
+#toggle{
+    display: none;
+}
+
+#menu{
+    background-color: bisque;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+#toggle:checked + #menu{
+    height: 65px;
+}
+
+/*effetti hover*/
+
+#menu li:hover{
+    background-color: white;
+}
+
+#menu a:hover{
+    background-color: white;
+}
+
+/*TABELLA*/
+
+table{
+    width: 100%;
+}
+
+table td{
+    border: 1px solid black;
+}
+
+table tr:first-child{
+    background-color: gray; /*(con first child seleziona la prima riga della tabella)*/
+}
+
+table tr:nth-of-type(6){
+    background-color: green; /*con nth-of-type(..valore..) posso decidere quale riga selezionare*/
+}
+
+
+/*pseudo-elementi (after e before)*/
+
+table tr:first-child td::after{
+    content: "+";
+}
+
+table tr:first-child td::before{
+    content: "-";
+}
