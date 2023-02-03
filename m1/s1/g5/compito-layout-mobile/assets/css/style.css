@@ -1,0 +1,148 @@
+body{
+text-align: center;
+font-family: 'Open Sans', sans-serif;
+line-height: 1.65;
+color: #393d41 ;
+font-size: 1.2rem;
+}
+header{
+    background-color: black;
+}
+
+header img{
+    width: 30%;
+    height: 30%;
+    padding: 25px;
+}
+
+.h1 h1{
+font-weight: bold;
+font-size: 2rem;
+margin-bottom: 20px;
+font-family: 'Montserrat', sans-serif;
+color: #25a2c3;
+}
+.h1 p{
+    margin-bottom: 20px;
+}
+
+#section1{
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.pulsante{
+    background-color: #f04c2f;
+    width: max-content;
+    height: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7%;
+    display: flex;
+}
+
+.pulsante a{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.rep h3{
+    font-family: 'Montserrat', sans-serif;
+    color:#25a2c3;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.rep p{
+    margin-bottom: 35px;
+}
+
+.cerchio img{
+    max-width: 100%;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+
+.testimonianze{
+    background-color: #e22d0e;
+    margin-bottom: 55px;
+}
+
+.testimonianze h2{
+    padding-top: 35px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.65rem;
+    color: white;
+}
+
+.testimonianze p{
+    color: white;
+    font-style: oblique;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.testimonianze h4{
+    color: white;
+}
+
+.testimonianze h5{
+    color: white;
+    font-size: 14px;
+    padding-bottom: 30px;
+}
+
+.rep2{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #dee1e3;
+    border-radius: 1%;
+    margin-bottom: 25px;
+}
+
+.rep2 img{
+    max-width: 100%;
+}
+
+.rep2 h3{
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.rep2 p{
+    padding-bottom: 25px;
+    font-size: 16px;
+}
+
+footer{
+    background-color: #25a2c3;
+}
+
+footer h2{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer p, a{
+    color: #c8e7f0;
+}
+
+.bordino{
+    border: 1px solid #c8e7f0;
+    max-width: 50% ;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
