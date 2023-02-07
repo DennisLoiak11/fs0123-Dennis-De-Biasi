@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        //apro un blocco
+        {
+            var a = 0; //non è soggetta a blockscope
+            console.log(a)
+        }
+        console.log(a)
+
+
+
+        {
+            let b = 1;
+            console.log(b)
+        }
+
+        var c = 2;
+        {
+            let c = 3;
+            console.log(c) //mi riferisco alla let della riga
+        }
+        console.log(c) //mi riferisco alla variabile var della riga 28
+
+        //CONST
+
+        const D = 4; 
+        
+        //D = 9 //la differenza tra const e var/let e che non posso modificarla nel tempo e si scrivono in MAIUSCOLO
+
+
+        //valori interni
+        const OGGETTO = {
+            nome: 'Mario',
+            cognome: 'Rossi'
+        }
+
+        console.log(OGGETTO)
+
+        OGGETTO.nome = 'Marco' //i valori interni di una costante posono essere modificati
+
+        console.log(OGGETTO.nome) //posso leggere il nome di OGGETTO
+
+
+
+
+    </script>
+</body>
+</html>
