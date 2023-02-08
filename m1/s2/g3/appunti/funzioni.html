@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+        saluto()//posso invocare una funzio anche prima della sua definizione
+
+        //fase di definizione
+        function saluto(){
+            console.log('ciao');
+        }
+
+        saluto()
+
+        function restituisciSaluto(){
+            return 'Benvenuto'; //restituisce la stringa
+            //un solo return per funzione perchè retunr termina le funzione
+        }
+
+        console.log(restituisciSaluto());
+
+        let stringa = restituisciSaluto();
+        console.log(stringa);
+
+        //SCOPE NELLE FUNZIONI
+        
+        let a = 0;
+        
+        function scope(){ 
+            console.log('let a = ' + a); //a è raggiungibile perchè è globale
+        }
+        
+        
+        //FUNZIONI PARAMETRICHE
+
+        function somma(a,b){
+            console.log(a + b);
+        }
+
+        somma(2,6);
+        somma(5,6);
+        
+        //CLOSURE
+
+        function funzione1(){
+            let a = 100;
+
+            function funzione2(){
+                console.log(a);
+                let x = 3;
+            }
+            
+            //x non è raggiungibile fuori da funzione2
+            funzione2()
+        }
+        funzione1()
+
+    </script>
+</body>
+</html>

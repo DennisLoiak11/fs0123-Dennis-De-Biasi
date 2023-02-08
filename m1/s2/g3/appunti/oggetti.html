@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let obj = {} //oggetto
+
+        let pizza = {
+            gusto: 'Margherita',
+            prezzo:5,
+            mostraPrezzo: function(){ 
+                console.log(`La pizza ${this.gusto} costa ${this.prezzo}`);
+            }
+        }
+        
+        //lettura di una proprietà in console
+        
+        console.log(pizza.gusto);
+        console.log(pizza.prezzo);
+        
+        //scrittura
+        
+        pizza.gusto = 'Diavola'
+        console.log(pizza.gusto);
+        
+        pizza.prezzo = 6.50
+        console.log(pizza.prezzo);
+        
+        console.table(pizza);
+
+        //utilizzo dei metodi (un metodo è tale solo se appartiene ad un oggetto)
+        pizza.mostraPrezzo()
+
+    </script>
+</body>
+</html>
