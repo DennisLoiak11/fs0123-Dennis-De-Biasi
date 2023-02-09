@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let frutto = 'mela'
+        switch (frutto) {
+            case 'mela':
+                document.write('Le mele costano 1$')
+                break;
+            case 'pera':
+                document.write('Le pere costano 0,90$')
+                break;
+            case 'ananas':
+            case 'mango':
+                document.write('Ananas e mango costano 3.90$')
+            default: //è praticamente un else
+            document.write('Non abbiamo più' + frutto)
+        }
+    </script>
+</body>
+</html>
