@@ -18,21 +18,15 @@
     <script>
 
         let test = document.getElementById("test");
-        console.dir(test.textContent);
+        console.dir(test);
 
+        console.log(test.innerHTML);
 
+        test.innerHTML = 'Ciao Mondo!'
+        test.style.color = 'red';
 
-        let elementi = document.getElementsByClassName('elemento');
-        console.log(elementi);
-
-        //elementi[0].textContent = 'ciao' => per scrivere all'interno di un <div class="elemento"></div>
-
-        for(let elemento of elementi){
-            elemento.textContent = 'ciao';
-        }
-
-
-
+        //nuovi selettori
+        let test = document.querySelector('#test')
 
     </script>
 </body>
