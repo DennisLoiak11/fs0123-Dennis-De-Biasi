@@ -1,0 +1,49 @@
+.bottoni{
+    display: inline-block;
+    height: 100px;
+    width: calc(100% / 4 - 0.2rem);
+    background-color: royalblue;
+    color: black;
+    font-size: 2.5rem;
+    margin-top: 5px;
+}
+
+.container-button{
+    width: 100%;
+}
+
+#display{
+    height: 120px;
+    width: 95%;
+    font-size: 3rem;
+    background-color: lightgray;
+    color: black;
+    display: flex;
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+.contenitore{
+    width: calc(100% / 2.5);
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    border: 30px solid royalblue;
+    
+}
+
+.uguale{
+    width: 100%;
+}
+
+.bottone-uguale{
+    display: inline-block;
+    height: 100px;
+    width: 100%;
+    background-color: royalblue;
+    color: black;
+    font-size: 2.5rem;
+    margin-top: 5px;
+}

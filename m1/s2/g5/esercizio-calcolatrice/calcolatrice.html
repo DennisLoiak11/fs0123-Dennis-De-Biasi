@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contenitore">
+        <input type="text" id="display">
+        <div>
+            <div class="container-button">            
+                <button class="bottoni" data-simbolo="1" onclick="aggiungiSimbolo(this)">1</button>
+                <button class="bottoni" data-simbolo="2" onclick="aggiungiSimbolo(this)">2</button>
+                <button class="bottoni" data-simbolo="3" onclick="aggiungiSimbolo(this)">3</button>
+                <button class="bottoni" data-simbolo="4" onclick="aggiungiSimbolo(this)">4</button>
+            </div>
+
+            <div class="container-button">
+                <button class="bottoni" data-simbolo="5" onclick="aggiungiSimbolo(this)">5</button>
+                <button class="bottoni" data-simbolo="6" onclick="aggiungiSimbolo(this)">6</button>
+                <button class="bottoni" data-simbolo="7" onclick="aggiungiSimbolo(this)">7</button>
+                <button class="bottoni" data-simbolo="8" onclick="aggiungiSimbolo(this)">8</button>
+            </div>
+
+            <div class="container-button">
+                <button class="bottoni" data-simbolo="9" onclick="aggiungiSimbolo(this)">9</button>
+                <button class="bottoni" data-simbolo="0" onclick="aggiungiSimbolo(this)">0</button>
+                <button class="bottoni" data-simbolo="+" onclick="aggiungiSimbolo(this)">+</button>
+                <button class="bottoni" data-simbolo="-" onclick="aggiungiSimbolo(this)">-</button>
+            </div>
+
+            <div class="container-button">
+                <input class="bottoni" type="button" value="c" onclick="display.value = ''" />
+                <button class="bottoni" data-simbolo="/" onclick="aggiungiSimbolo(this)">/</button>
+                <button class="bottoni" data-simbolo="." onclick="aggiungiSimbolo(this)">.</button>
+                <button class="bottoni" data-simbolo="*" onclick="aggiungiSimbolo(this)">x</button>
+            </div>
+
+            <div class="uguale"> <button class="bottone-uguale" onclick="totale()">=</button> </div>
+            
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
