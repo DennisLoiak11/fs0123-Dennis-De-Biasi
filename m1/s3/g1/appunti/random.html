@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let lettereMaiusc = 'DJENVJDGHEDNV';
+        let lettereMinusc = lettereMaiusc.toLocaleLowerCase();
+        let num = 01234567;
+        let simboli = '$%&/()#@[]';
+        let chars = lettereMaiusc + lettereMinusc + num + simboli;
+        console.log(chars.length);
+        
+        
+        let rand = Math.floor(Math.random() * chars.length); //Math.floor arrotonda per difetto
+        
+        console.log(rand);
+        
+        function generaPassword(){
+            
+            let password = '';
+            for(var i = 0; i<10; i++){
+            let rand = Math.floor(Math.random() * chars.length); //Math.floor arrotonda per difetto
+            password += chars[rand];
+        }
+        console.log(password);
+            
+        }
+        generaPassword()
+        
+    </script>
+</body>
+</html>
