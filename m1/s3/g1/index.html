@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        //1
+        let area = (l1, l2) => l1 * l2;
+        console.log(area(3, 7));
+
+        //2
+        function crazySum(a, b) {
+            if (a == b) {
+                return (a + b) * 3;
+            }
+            return a + b;
+        }
+        console.log(crazySum(2, 2));
+
+        //3
+        function crazyDiff(a) {
+            if (a > 19) {
+                return (a - 19) * 3;
+            } else {
+                return 19 - a;
+            }
+        }
+        console.log(crazyDiff(22));
+
+        //4
+        function boundary(n) {
+            if (n > 20 && n <= 100 || n == 400) {
+                return true
+            } else return false
+        }
+        console.log(boundary(400));
+        console.log(boundary(50));
+        console.log(boundary(20));
+
+        //5
+        function epify(parola) {
+            if (parola.startsWith('EPICODE')) {
+                return parola
+            } else {
+                let testoEpico = 'EPICODE' + ' ' + parola;
+                return testoEpico
+            }
+        }
+        console.log(epify('macchina'));
+        console.log(epify('EPICODE verde'));
+
+        //6
+        function check3and7(n) {
+            if (n >= 0 && n % 3 == 0 || n % 7 == 0) {
+                return true
+            } else {
+                return false
+            }
+        }
+        console.log(check3and7(21));
+
+        //7
+        function reverseString(stringa) {
+            let string = stringa.split("")
+            let reverse = string.reverse()
+            let finalmente = reverse.join("")
+            return finalmente
+        }
+
+        console.log(reverseString("EPICODE"));
+
+        //8
+        function upperFirst(word) {
+            let string = word.split("");
+            for (i = 0; i < string.length; i++) {
+                if (string[i] == " ") {
+                    string[i + 1] = string[i + 1].toUpperCase();
+                }
+            }
+            newWord = string.join("");
+            return newWord;
+        } console.log(upperFirst('ho visto una macchina rossa'));
+
+        //9
+        function cutString(parola) {
+            let word = parola.substring(1, 5)
+            return word
+        } console.log(cutString('parola'));
+
+        //10
+        let num = [1,2,3,4,5,6,7,8,9,10]
+        let rand = Math.floor(Math.random() * num.length);
+        console.log(rand);
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
