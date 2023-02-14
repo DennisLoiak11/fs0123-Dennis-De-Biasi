@@ -24,7 +24,7 @@ console.log(concatenamento('Forza', 'Roma'));
  */
 function numDispari() {
   let num = [];
-  for (i = 0; i <= 100; i++) {
+  for (i = 1; i <= 100; i++) {
     if (i % 2 == 1) {
       num.push(i);
     }
