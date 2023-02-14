@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        //1
+        let stringa1 = 'Forza';
+        let stringa2 = 'Roma';
+
+        function concatenamento(stringa1, stringa2) {
+
+            let array1 = stringa1.split('')
+            let array2 = stringa2.split('')
+
+            let stringa3 = array1.slice(0, 2)
+            let stringa4 = array2.slice(-3)
+
+            let stringa5 = stringa3.concat(stringa4)
+            return stringa5.join('').toUpperCase();
+
+        }
+        console.log(concatenamento('Forza', 'Roma'));
+
+        //2
+        function numDispari() {
+            let num = [];
+            for (i = 0; i <= 100; i++) {
+                if (i % 2 == 1) {
+                    num.push(i);
+                }
+            }
+            return num;
+        }
+
+        console.log(numDispari());
+
+        //3
+        function multipli5() {
+            let num = [];
+            for (i = 0; i <= 100; i++) {
+                if (i % 5 == 0) {
+                    num.push(i);
+                }
+            }
+            return num;
+        }
+
+        console.log(multipli5());
+
+        //4
+        function randomNum() {
+            let num = [];
+            for (i = 0; i < 10; i++) {
+                num[i] = Math.floor(Math.random() * 101);
+            }
+            return num;
+        }
+
+        console.log(randomNum());
+
+        //5
+        function numeriPari(num) {
+            let numPari = []
+            for (let n of num) {
+                if (n % 2 == 0) {
+                    numPari.push(n)
+                }
+            } return numPari;
+
+        }
+        let elenco = [3,4,5,6,7,8];
+        console.log(numeriPari(elenco));
+        
+
+        //6
+        numeri = [1,2,3,4,5,6];
+        let somma = numeri.reduce(function(p,c){
+            return p + c;
+        })
+        console.log(somma)
+
+        //7
+        function som(num) {
+            num = [1,2,3,4]
+            num.map(v => v + 1);
+            return num;
+
+        }console.log(som());
+
+        //8
+        let array = ["EPICODE", "is", "great"]
+        array[0] = array[0].length
+        array[1] = array[1].length
+        array[2] = array[2].length
+        console.log(array);
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
