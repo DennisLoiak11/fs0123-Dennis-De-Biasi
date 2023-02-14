@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="prova"></div>
+    <div class="quadrato"></div>
+    <div class="quadrato"></div>
+
+    <section id="area1">
+
+        <div class="blocco"></div>
+        <div class="blocco"></div>
+        <div class="blocco"></div>
+        
+    </section>
+    <section id="area2">
+        
+        <div class="blocco"></div>
+        <div class="blocco"></div>
+        <div class="blocco"></div>
+
+    </section>
+    
+    <script>
+        //'get element' restituisce un elemento tarmite la ricerca del suo id senza cancelletto nelle parentesi
+        document.getElementById('prova')//restituisce solo 1 elemento
+        
+        document.getElementsByClassName('quadrato')//restituisce un array (non ciclabile con i metodi degl array)
+
+        document.getElementsByTagName('div')//restituisce un array (non ciclabile con i metodi degl array)
+
+        //per ottenere un array ciclbile:
+        letlistaCiclabile = Array.from(document.getElementsByClassName('quadrato'))
+
+        
+        //querySelector querySelectorAll sono gli unici che funzionano con qualsiasi query di css (.prova / #prova)
+        document.querySelector('#prova');//da l'elemento con id prova
+        
+        document.querySelector('.quadrato');//da sol il primo eòemento con la classe quadrato (se non trova niente da Null)
+
+        //QUERYSELECTORALL DA SEMPRE UN ARRAY
+        document.querySelectorAll('.quadrato')//mi da tutti gli elementi con la classe quadrato (se non trova niente restituisce un array vuoto)
+
+        document.querySelector('div')//mi da tutti i div
+        document.querySelector('div span')//mi da tutti gli span figli di div
+
+        document.querySelectorAll('#are1 .blocco')//seleziono tutti gli elementi .blocco figli di #area1
+
+    </script>
+</body>
+</html>

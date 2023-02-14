@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let array = []
+        console.log(array.length);//length = 0 (mostra la lunghezza di un array se usato su un array)
+        
+        
+        let arr = [1,2,3,4,5].map(n => n * 2) //[2,4,6,8,10]
+        
+        console.log('parola'.length);//length mostra la lunghezza di una se usato su una stringa
+
+        let pizze = ['Margherita', 'Diavola', 'Marinara'];
+        
+        console.log(pizze[1]); //diavola
+        
+        pizze[2] = 'Capricciosa'
+        
+        console.log(pizze); //sostituisco marinara con capricciosa
+        
+        
+        let lettere = ['a', 'b', 'c','d','e']
+        let eliminato = lettere.pop() //elimino ultimo elemento
+        console.log(lettere);
+        
+        lettere.push('K')
+        console.log(lettere);//aggiungo k come ultimo elemento
+        
+        lettere.shift()//elimino un carattere dall'inizio (a)
+        console.log(lettere);
+        
+        lettere.unshift('M')//aggiungo M all'inizio
+        console.log(lettere); 
+        
+        //eliminare un carattere qualsiasi
+        lettere = ['a', 'b', 'c','d','e']
+        
+        let indice = 0 //da dove inizio a eliminare
+        let qty = 2 //quanti ne elimino
+        
+        lettere.splice(indice,qty)//restituisce l'array degli elementi rimossi
+        
+        console.log(lettere);
+        
+        //sostituzione di un qualsiasi indice
+        lettere = ['a', 'b', 'c','d','e']
+        lettere.splice(2,1,'KK')
+        
+        console.log(lettere);//al posto di'c' c'è 'KK'
+        
+        let lettere1 = ['a', 'b', 'c','d','e']
+        let numeri = [1,2,3,4,5,6,7]
+        
+        //concatenazione array
+        let lettere3 = lettere1.concat(numeri)
+        console.log(lettere3);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    </script>
+</body>
+</html>
