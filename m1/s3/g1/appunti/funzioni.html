@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
 
     <script>
 
@@ -24,71 +26,103 @@
         let dato = restituisciSaluto();
         console.log(dato);
 
-        
+
+        //eseguo una funzione una sola volta dopo 3s
+        setTimeout(function () {
+            console.log(new Date())
+        }, 3000);
+
+        /*eseguire all'infinito dopo 1s
+        setInterval(function(){
+            console.log(new Date());
+        },1000);*/
+
+        setInterval(function () { //setInterval lo uso per eseguire una funzione all'infinito
+            let tag = document.querySelector('#ora')
+            let orario = new Date().toLocaleTimeString()
+
+            tag.innerText = orario;
+
+        }, 1000)
+
+
+        //countdown
+        let count = 10;
+
+        /*let timer = setInterval(function () {
+            count--;//il conto si riduce di uno ogni secondo
+            console.log(count);//mostra il valore aggiornato
+            if (count == 0) {
+                clearInterval(timer)//fermo il timer
+            }
+        }, 1000)*/
+
+
+
         //funzioni parametriche
-        function somma(a,b) {
+        function somma(a, b) {
             console.log(a + b);
         }
 
 
-        somma(2,8)
+        somma(2, 8)
         somma()//NaN; nel lancio della funzione non ho messo valori
 
 
         //GESTIONE PARAMETRI MANCANTI
-        function sommaPlus(a,b,c){
-            
+        function sommaPlus(a, b, c) {
+
             console.log(a + b + c);
 
         }
-        sommaPlus(2,4)//NaN, manca un valore
-        sommaPlus(2,4,6)//12
-        
+        sommaPlus(2, 4)//NaN, manca un valore
+        sommaPlus(2, 4, 6)//12
+
         //correggo la funzione
-        function sommaPlus(a,b,c){
+        function sommaPlus(a, b, c) {
             let num = 0
-            if (a){//se 'a' ha un valore > di 0
+            if (a) {//se 'a' ha un valore > di 0
                 num += a
             }
-            if (b){//se 'b' ha un valore > di 0
+            if (b) {//se 'b' ha un valore > di 0
                 num += b
             }
-            if (c){//se 'c' ha un valore > di 0
+            if (c) {//se 'c' ha un valore > di 0
                 num += c
             }
 
             console.log(num);
 
         }
-        sommaPlus(2,4)//NaN, manca un valore
-        sommaPlus(2,4,6)//12
+        sommaPlus(2, 4)
+        sommaPlus(2, 4, 6)//12
 
         //correggo impostando un valore fisso
-        function sommaPlusDefault(a = 0,b = 0,c = 0){
-            
+        function sommaPlusDefault(a = 0, b = 0, c = 0) {
+
             console.log(a + b + c);
 
         }
-        sommaPlusDefault(2,4)
-        sommaPlusDefault(2,4,6)
-        
+        sommaPlusDefault(2, 4)
+        sommaPlusDefault(2, 4, 6)
+
 
 
 
         //CLOSURES
         function closure() {
             let numero = 10
-            function fnFiglia(){
+            function fnFiglia() {
                 return numero * 2
             }
 
             return fnFiglia();
-            
+
         }
         console.log(closure());
 
         //SELF-INVOKING (FUNZIO CHE SI INVOCA DA SOLA)
-        (function(){
+        (function () {
             console.log('Auto invocata');
         })();
 
@@ -110,18 +144,19 @@
         console.log(grassetto('ciao'));
 
 
-        let sommaFreccia = (a,b) => a + b;
-        console.log(sommaFreccia(3,7));
+        let sommaFreccia = (a, b) => a + b;
+        console.log(sommaFreccia(3, 7));
 
 
         //spread operator funzioni
 
-        let sommaProUltra = (...numeri) => numeri.reduce((p,c)=> p + c)
-        console.log(sommaProUltra(1,50,90,700,5));
+        let sommaProUltra = (...numeri) => numeri.reduce((p, c) => p + c)
+        console.log(sommaProUltra(1, 50, 90, 700, 5));
 
 
 
 
     </script>
 </body>
+
 </html>
