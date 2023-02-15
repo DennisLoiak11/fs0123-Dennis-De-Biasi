@@ -9,6 +9,7 @@ function createList(){
 
     
     li.textContent = input.value;
+    input.value = '';
     del.textContent = 'Cancella';
     li.append(del);
     taskList.append(li);
