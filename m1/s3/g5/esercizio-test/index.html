@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="container"></div>
+
+    <table>
+        <tbody>
+            <tr>
+                <td>ciao</td>
+                <td>ciao</td>
+                <td>ciao</td>
+            </tr>
+            <tr>
+                <td>ciao</td>
+                <td>ciao</td>
+                <td>ciao</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="#">questo è un link</a>
+    
+
+
+    <ul id="myList">
+        <li>primo</li>
+        <li>secondo</li>
+        <li>terzo</li>
+        <li>quarto</li>
+    </ul>
+
+
+
+    <script>
+
+        const movies = [
+            {
+                Title: 'The Lord of the Rings: The Fellowship of the Ring',
+                Year: '2001',
+                imdbID: 'tt0120737',
+                Type: 'movie',
+                Poster:
+                    'https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg',
+            },
+
+            {
+                Title: 'The Lord of the Rings: The Return of the King',
+                Year: '2003',
+                imdbID: 'tt0167260',
+                Type: 'movie',
+                Poster:
+                    'https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg',
+            },
+            {
+                Title: 'The Lord of the Rings: The Two Towers',
+                Year: '2002',
+                imdbID: 'tt0167261',
+                Type: 'movie',
+                Poster:
+                    'https://m.media-amazon.com/images/M/MV5BNGE5MzIyNTAtNWFlMC00NDA2LWJiMjItMjc4Yjg1OWM5NzhhXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg',
+            },
+            {
+                Title: 'Lord of War',
+                Year: '2005',
+                imdbID: 'tt0399295',
+                Type: 'movie',
+                Poster:
+                    'https://m.media-amazon.com/images/M/MV5BMTYzZWE3MDAtZjZkMi00MzhlLTlhZDUtNmI2Zjg3OWVlZWI0XkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg',
+            },
+            {
+                Title: 'Lords of Dogtown',
+                Year: '2005',
+                imdbID: 'tt0355702',
+                Type: 'movie',
+                Poster:
+                    'https://m.media-amazon.com/images/M/MV5BNDBhNGJlOTAtM2ExNi00NmEzLWFmZTQtYTZhYTRlNjJjODhmXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg',
+            },
+            {
+                Title: 'The Lord of the Rings',
+                Year: '1978',
+                imdbID: 'tt0077869',
+                Type: 'movie',
+                Poster:
+                    'https://m.media-amazon.com/images/M/MV5BOGMyNWJhZmYtNGQxYi00Y2ZjLWJmNjktNTgzZWJjOTg4YjM3L2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg',
+            },
+            {
+                Title: 'Lord of the Flies',
+                Year: '1990',
+                imdbID: 'tt0100054',
+                Type: 'movie',
+                Poster:
+                    'https://m.media-amazon.com/images/M/MV5BOTI2NTQyODk0M15BMl5BanBnXkFtZTcwNTQ3NDk0NA@@._V1_SX300.jpg',
+            },
+            {
+                Title: 'The Lords of Salem',
+                Year: '2012',
+                imdbID: 'tt1731697',
+                Type: 'movie',
+                Poster:
+                    'https://m.media-amazon.com/images/M/MV5BMjA2NTc5Njc4MV5BMl5BanBnXkFtZTcwNTYzMTcwOQ@@._V1_SX300.jpg',
+            },
+            {
+                Title: 'Greystoke: The Legend of Tarzan, Lord of the Apes',
+                Year: '1984',
+                imdbID: 'tt0087365',
+                Type: 'movie',
+                Poster:
+                    'https://m.media-amazon.com/images/M/MV5BMTM5MzcwOTg4MF5BMl5BanBnXkFtZTgwOTQwMzQxMDE@._V1_SX300.jpg',
+            },
+            {
+                Title: 'Lord of the Flies',
+                Year: '1963',
+                imdbID: 'tt0057261',
+                Type: 'movie',
+                Poster:
+                    'https://m.media-amazon.com/images/M/MV5BOGEwYTlhMTgtODBlNC00ZjgzLTk1ZmEtNmNkMTEwYTZiM2Y0XkEyXkFqcGdeQXVyMzU4Nzk4MDI@._V1_SX300.jpg',
+            },
+            {
+                Title: 'The Avengers',
+                Year: '2012',
+                imdbID: 'tt0848228',
+                Type: 'movie',
+                Poster:
+                    'https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
+            },
+            {
+                Title: 'Avengers: Infinity War',
+                Year: '2018',
+                imdbID: 'tt4154756',
+                Type: 'movie',
+                Poster:
+                    'https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_SX300.jpg',
+            },
+            {
+                Title: 'Avengers: Age of Ultron',
+                Year: '2015',
+                imdbID: 'tt2395427',
+                Type: 'movie',
+                Poster:
+                    'https://m.media-amazon.com/images/M/MV5BMTM4OGJmNWMtOTM4Ni00NTE3LTg3MDItZmQxYjc4N2JhNmUxXkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_SX300.jpg',
+            },
+            {
+                Title: 'Avengers: Endgame',
+                Year: '2019',
+                imdbID: 'tt4154796',
+                Type: 'movie',
+                Poster:
+                    'https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg',
+            },
+        ]
+
+        //A
+        let sum1 = 10;
+        let sum2 = 20;
+        let sum = sum1 + sum2;
+        console.log(sum);
+
+        //B
+        let rand = Math.floor(Math.random() * 21);
+        console.log(rand);
+
+        //C
+        let me = {
+            name: 'Dennis',
+            surname: 'De Biasi',
+            age: 19
+        }
+        console.log(me);
+
+        //D
+        delete me.age
+        console.log(me);
+
+        //E
+        me.skills = [
+            'HTML',
+            'CSS'
+        ];
+        console.log(me);
+
+        //F
+        me.skills.push('JavaScript');
+        console.log(me);
+
+        //G
+        me.skills.pop();
+        console.log(me);
+
+        //1
+        function dice() {
+            let numero = Math.ceil(Math.random() * 6);
+            console.log(numero);
+        } dice();
+
+        //2
+        function whoIsBigger(n1, n2) {
+            if (n1 > n2) {
+                return `${n1} è maggiore di ${n2}`
+            } else if (n1 < n2) {
+                return `${n2} è maggiore di ${n1}`
+            } else {
+                return 'i numeri sono uguali'
+            }
+        }
+        console.log(whoIsBigger(2, 2));
+
+        //3
+        function splitMe() {
+            let p = 'I love coding';
+            pSplit = p.split(' ')
+            console.log(pSplit);
+        }
+        splitMe();
+
+        //4
+        function deleteOne(stringa, bool) {
+            if (bool == true) {
+                return stringa.substring(1)
+            } else {
+                return stringa.slice(0, -1)
+            }
+        } console.log(deleteOne('Ciao', true));
+
+        //5
+        function onlyLetters(stringa) {
+            stringaSoloLettere = stringa.replace(/[^a-z]?/g, "")
+            console.log(stringaSoloLettere);
+        } onlyLetters('I have 4 dogs');
+
+        //6
+        function isThisAnEmail(mail) {
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+                return (true)
+            }
+            else {
+                return (false)
+            }
+        } console.log(isThisAnEmail('dennisloiak@gmail.com'));
+
+        //7
+        function whatDayIsIt() {
+            let data = new Date;
+            let giorno = data.getDay();
+            console.log(giorno);
+        } whatDayIsIt(); //5 (venerdi)
+
+        //8
+
+
+
+        //9
+
+
+        //10 nessuna delle due idee era buona
+        function IsTodayMyBirthday() {
+            let oggi = new Date();
+            console.log(oggi);
+
+            let birthData = new Date();
+            birthData.setYear(2003);
+            birthData.setMonth(4);
+            birthData.setDate(27);
+
+            console.log(birthData);
+
+            if (birthData == oggi) {
+                return true
+            } else {
+                return false
+            }
+        } console.log(IsTodayMyBirthday());
+
+        function compleanno() {
+            let comp = new Date('May 27 2023');
+            let oggi = new Date()
+            if (comp == oggi) {
+                return true;
+            } else {
+                return false;
+            }
+        } console.log(compleanno());
+
+
+
+        //12
+        function newestMovie() {
+            let Year = [];
+            for (i = 0; i < movies.length; i++) {
+                Year.push(movies[i].Year);
+            }
+            Year.sort(function (a, b) {
+                return b - a;
+            });
+            console.log(Year);
+            let newFilm = Year[0];
+            console.log(`il film più recente risale al ${newFilm}`);
+        } newestMovie()
+
+        //13
+        function countMovies() {
+            return movies.length
+        } console.log(`nell'array "movies" ci sono ${movies.length} film`);
+        countMovies();
+
+        //14
+        function onlyTheYears() {
+            let Year = [];
+            for (i = 0; i < movies.length; i++) {
+                Year.push(movies[i].Year);
+            }
+            console.log(Year);
+        }
+        onlyTheYears()
+
+        //15
+        function onlyLastMillenium() {
+            let Millennium = [];
+
+            for (i = 0; i < movies.length; i++) {
+                let filmAge = Number(movies[i].Year);
+                if (filmAge < 2000) {
+                    Millennium.push(movies[i])
+                };
+            }
+            console.log(Millennium);
+        } onlyLastMillenium()
+
+        //16
+        function sumAllTheYears() {
+            let i = 0;
+            let totalYears = 0;
+            while (i < movies.length) {
+                totalYears += Number(movies[i].Year);
+                i++;
+            }
+
+            console.log(totalYears);
+        } sumAllTheYears()
+
+        //17
+
+        function SearchByTitle(stringa) {
+            for (i = 0; i < movies.length; i++) {
+                if (stringa == movies[i].Title) {
+                    console.log(movies[i]);
+                }
+            }
+        } SearchByTitle('The Avengers')
+
+        //18
+        function searchAndDivide(stringa) {
+            let match = [];
+            let unmatch = [];
+            for (i = 0; i < movies.length; i++) {
+                if (stringa == movies[i].Title) {
+                    match.push(movies[i]);
+                } else {
+                    unmatch.push(movies[i])
+                }
+            } console.log(match);
+            console.log(unmatch);
+        } searchAndDivide('Avengers: Endgame')
+
+        //19
+        function removeIndex(indice) {
+            let filmtolto = movies.splice(indice, 1)
+            console.log(movies);
+        } removeIndex(0)
+
+        //20
+        function selectId() {
+            let container = document.querySelector('#container');
+        } selectId()
+
+        //21
+        function tabella() {
+            let righe = document.querySelectorAll('table > tbody > tr > td');
+            righe.forEach(riga => {
+                riga.textContent = 'Hello!'
+            })
+        }
+        tabella()
+
+        //22
+        function stampa() {
+            let righe = document.querySelectorAll('table > tbody > tr > td');
+            for (let i = 0; i < righe.length; i++) {
+                console.log(righe[i].innerHTML);
+
+            }
+
+        } stampa()
+
+        //23
+        let colore = function() {
+            let link = document.querySelector('a');
+            link.style.backgroundColor = 'red';
+        
+        } 
+        colore()
+
+        //24
+        function lista() {
+            let stringa = 'quinto'
+            let elenco = document.getElementById('myList');
+            let li = document.createElement('li');
+            let textLI = document.createTextNode(stringa);
+            li.appendChild(textLI);
+            elenco.appendChild(li)
+        }lista()
+
+        //25
+        function svuota() {
+            let listaVuota = document.getElementById('myList > li')
+            listaVuota.empty()
+        }svuota()
+
+        //26
+        function classe() {
+            let element = document.querySelectorAll('table > tbody > tr');
+            tbody.forEach(element => {
+                element.classList.add('test')
+            });
+        }classe()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
