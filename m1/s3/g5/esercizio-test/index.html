@@ -420,37 +420,19 @@
         }lista()
 
         //25
-        function svuota() {
-            let listaVuota = document.getElementById('myList > li')
-            listaVuota.empty()
-        }svuota()
 
         //26
         function classe() {
             let element = document.querySelectorAll('table > tbody > tr');
-            tbody.forEach(element => {
+            let tbody = document.querySelector('table > tbody')
+            element.forEach(element => {
                 element.classList.add('test')
             });
         }classe()
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </script>
+</script>
 
 
 
