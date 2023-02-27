@@ -178,3 +178,72 @@ footer {
 footer a {
     color: fuchsia;
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    header nav ul li {
+        display: inline-block;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    header nav ul li {
+        display: inline-block;
+        margin: 10px;
+    }
+    
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    header div img{
+        display: inline-block;
+        margin: 0;
+    }
+    header div{
+        display: inline-block;
+    }
+    header div p{
+        display: inline-block;
+        margin: 0;
+    }
+    header nav ul li {
+        display: inline-block;
+        margin: 10px;
+    }
+    header nav {
+        display: inline-block;
+    }
+    header nav ul {
+        display: inline-block;
+    }
+    
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    aside div{
+        display: inline-block;
+        width: 33%;
+        margin-inline: -2px;
+    }
+    aside {
+        text-align: center;
+    }
+
+    iframe{
+        width: 45%;
+        display: inline-block;
+    }
+    section{
+        width: 45%;
+        display: inline-block;
+        border-radius: 20px;
+    }
+}
