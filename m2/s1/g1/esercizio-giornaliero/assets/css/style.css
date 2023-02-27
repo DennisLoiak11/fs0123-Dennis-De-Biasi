@@ -201,6 +201,7 @@ footer a {
 
 @media screen and (min-width: 1200px) {
     header div img{
+        vertical-align: middle;
         display: inline-block;
         margin: 0;
     }
@@ -208,6 +209,7 @@ footer a {
         display: inline-block;
     }
     header div p{
+        vertical-align: middle;
         display: inline-block;
         margin: 0;
     }
@@ -238,10 +240,13 @@ footer a {
     }
 
     iframe{
+        height: 160px;
+        vertical-align: middle;
         width: 45%;
         display: inline-block;
     }
     section{
+        vertical-align: middle;
         width: 45%;
         display: inline-block;
         border-radius: 20px;
