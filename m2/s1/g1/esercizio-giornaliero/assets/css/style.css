@@ -200,6 +200,7 @@ footer a {
 }
 
 @media screen and (min-width: 1200px) {
+
     header div img{
         vertical-align: middle;
         display: inline-block;
