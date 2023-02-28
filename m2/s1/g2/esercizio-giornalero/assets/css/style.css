@@ -16,6 +16,30 @@ hr {
   display: none;
 } /* rimuove l'elemento */
 
+  .calendario{
+  font-size: 1.5em;
+  display: block;
+  color: #3f6bca;
+  margin-bottom: 10px;
+  z-index: 2;
+}
+  .calendario i{
+    border: 3px solid white;
+    border-radius: 20%;
+    padding: 10px;
+    backdrop-filter: blur(5px);
+  }
+  .plus{
+    font-size: 1.5em;
+    color: #3f6bca;
+  }
+  .plus i{
+    border: 3px solid white;
+    border-radius: 20%;
+    padding: 10px;
+    backdrop-filter: blur(5px);
+  }
+
 /* HEADER */
 header {
   background: rgb(0, 160, 198);
@@ -27,11 +51,18 @@ header {
   box-shadow: 0 3px 3px #444;
   margin-bottom: 1.5em;
   padding: 2em 1.5em;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
 }
 
 @media screen and (min-width: 800px) {
   header {
     padding: 1em;
+  }
+  .icone{
+    position: absolute;
+    right: 0px;
   }
 }
 
@@ -102,6 +133,7 @@ section {
   padding: 1.5em 1em;
   margin-bottom: 2em;
   position: relative;
+  height: 265px;
 }
 
 section h2 {
@@ -112,6 +144,8 @@ section h2 {
   font-weight: bold;
   background-color: #a3a3a3;
   padding: 0px 1em;
+  position: absolute;
+  top: -25px;
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
@@ -179,6 +213,12 @@ h1 + p {
   }
   section {
     border-radius: 20px;
+  }
+  .title img{
+    position: relative;
+    left: 445px;
+    width: 560px;
+    bottom: 35px;
   }
 }
 
@@ -335,6 +375,26 @@ footer {
   padding: 1em;
   text-align: center;
   font-size: 1.2rem;
+}
+footer .bottone{
+  position: absolute;
+  right: 0;
+  font-size: 1.5em;
+  color: #a02571;
+}
+
+footer i{
+  border: 3px solid white;
+  border-radius: 20%;
+  padding: 10px;
+  backdrop-filter: blur(5px);
+}
+
+@media screen and (max-width: 1199px){
+  .icone{
+    position: absolute;
+    top: 2400px;
+  }
 }
 
 @media screen and (min-width: 800px) {
