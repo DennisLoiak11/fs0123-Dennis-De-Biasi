@@ -40,6 +40,15 @@ hr {
     backdrop-filter: blur(5px);
   }
 
+  /*ICONE BLU*/
+  @media screen and (max-width: 699px) {
+    .icone{
+      position: fixed;
+      bottom: 100px;
+      right: 0;
+    }
+  }
+
 /* HEADER */
 header {
   background: rgb(0, 160, 198);
@@ -56,14 +65,19 @@ header {
   z-index: 1;
 }
 
+@media screen and (min-width: 700px){
+  .icone{
+    position: absolute;
+    right: 0px;
+    z-index: 2;
+  }
+}
+
 @media screen and (min-width: 800px) {
   header {
     padding: 1em;
   }
-  .icone{
-    position: absolute;
-    right: 0px;
-  }
+
 }
 
 @media screen and (max-width: 1199px) {
@@ -157,6 +171,18 @@ h1 {
   letter-spacing: -0.03em;
   margin-bottom: 0.7em;
 }
+span{
+  position: relative;
+  display: inline-block;
+}
+
+h1 img{
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 100%;
+  opacity: 0.6;
+}
 
 p,
 address,
@@ -213,12 +239,6 @@ h1 + p {
   }
   section {
     border-radius: 20px;
-  }
-  .title img{
-    position: relative;
-    left: 445px;
-    width: 560px;
-    bottom: 35px;
   }
 }
 
@@ -377,7 +397,8 @@ footer {
   font-size: 1.2rem;
 }
 footer .bottone{
-  position: absolute;
+  position: fixed;
+  bottom: 0;
   right: 0;
   font-size: 1.5em;
   color: #a02571;
@@ -388,13 +409,6 @@ footer i{
   border-radius: 20%;
   padding: 10px;
   backdrop-filter: blur(5px);
-}
-
-@media screen and (max-width: 1199px){
-  .icone{
-    position: absolute;
-    top: 2400px;
-  }
 }
 
 @media screen and (min-width: 800px) {
